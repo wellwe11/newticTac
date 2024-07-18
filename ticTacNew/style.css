@@ -1,0 +1,53 @@
+.container {
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+  grid-template-rows: repeat(4, 25%);
+  background-color: cadetblue;
+  width: 300px;
+  height: 300px;
+}
+
+.playerInfo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 240px;
+
+  grid-column: 1 / -1;
+  grid-row: 1;
+}
+
+.playerOneName > h4,
+.playerTwoName > h4 {
+  margin-top: -24px;
+}
+
+.turn {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+.cellButtons {
+  width: 50px;
+  height: 50px;
+}
+
+.nameInput {
+  width: 143px;
+  height: 15px;
+
+  grid-column: 2;
+  grid-row: 4;
+
+  margin-top: 10px;
+}
+
+.boardDiv {
+  width: 150px;
+
+  grid-column: 2;
+  grid-row: 2;
+}
+
+.message {
+}
