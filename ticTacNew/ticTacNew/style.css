@@ -1,0 +1,89 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  background-color: #141414;
+}
+
+.container {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  grid-template-columns: repeat(5, 20%);
+  grid-template-rows: repeat(5, 20%);
+  background-color: #6c6c6c;
+  width: 300px;
+  height: 300px;
+
+  border-radius: 1.5px;
+}
+
+.playerInfo {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 300px;
+  height: 60px;
+
+  grid-column: 1 / -1;
+  grid-row: 1;
+}
+
+.playerOneName p,
+.playerTwoName p {
+  margin-top: -1px;
+  width: 60px;
+}
+
+.turn {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+.cellButtons {
+  width: 50px;
+  height: 50px;
+}
+
+.nameInput {
+  width: 143px;
+  height: 15px;
+
+  grid-column: 3;
+  grid-row: 2;
+
+  border: none;
+
+  margin-top: 10px;
+
+  background-color: #b6b5b5;
+}
+
+.nameInput:focus {
+  outline: none;
+}
+
+.boardDiv {
+  width: 170px;
+
+  grid-column: 3;
+  grid-row: 3;
+}
+
+.message {
+  grid-column: 3;
+  grid-row: 5;
+  margin-top: -30px;
+}
+
+button {
+  background-color: #a4a0a0;
+  transition: 0.3s ease-in;
+
+  margin: 3px;
+  border: none;
+}
+
+button:hover {
+  background-color: #d6d5d5;
+}
